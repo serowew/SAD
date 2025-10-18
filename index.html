@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Freshmen Enrollment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Enrollment Card -->
+  <div class="card">
+    <div class="form-section">
+      <h2>Incoming Freshmen Enrollment</h2>
+      <form action="register.php" method="POST">
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        
+        <!-- Added Birthday Field -->
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday" id="birthday" required>
+        
+        <select name="course" required>
+          <option value="">Select Course</option>
+          <option value="BSIT">BSIT</option>
+          <option value="BSCS">BSCS</option>
+          <option value="BSECE">BSECE</option>
+        </select>
+
+        <label>Preferred Exam Date:</label>
+        <input type="date" name="exam_date" required>
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <div class="image-section">
+      <h3>Pateros Technological College</h3>
+      <p>Gearing the way to your future — start your enrollment today!</p>
+    </div>
+  </div>
+
+</body>
+</html>
